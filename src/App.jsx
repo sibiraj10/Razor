@@ -54,19 +54,19 @@ function App() {
     <form onSubmit={handleSubmit}>
       <label>
         Name:
-        <input type="text" name="name" value={formData.name} onChange={handleChange}  />
+        <input type="text" name="name" value={formData.name} onChange={handleChange}  required/>
       </label>
       <label>
         Amount:
-        <input type="number" name="amount" value={formData.amount} onChange={handleChange}  />
+        <input type="number" name="amount" value={formData.amount} onChange={handleChange}  required/>
       </label>
       <label>
         Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange}  />
+        <input type="email" name="email" value={formData.email} onChange={handleChange}  required/>
       </label>
       <label>
         Number:
-        <input type="tel" name="number" value={formData.number} onChange={handleChange}  />
+        <input type="tel" name="number" value={formData.number} onChange={handleChange} required/>
       </label>
       <button type="submit">Submit</button>
     </form>
